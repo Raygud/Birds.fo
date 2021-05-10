@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+            
+            
+        <script src="search.js"></script>
+        <div class="topcontainer"> <img src="" alt=""></div>
+        <div class="container">
+            <h1>Birds of The Faroe Islands </h1>
+            <div id="searchWrapper">
+                <input
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="search for a bird"
+                />
+            </div>
+            <div class="filters"><div class="filters">
+                
+                
+                <select id ="Eyes" onchange="dropdownChange();">
+                <option selected value="0">Apply eye filter</option>
+                <option selected value="1">Red</option>
+                <option selected value="2">Yellow/Orange</option>
+                <option selected value="3">White</option>
+                <option selected value="4">green</option>
+                <option selected value="5">blue</option>
+                <option selected value="6">Black</option>
+                </select>
+                
+                <select id="Beak" onchange="dropdownChange();">
+                <option value="Apply filter">Apply beak filter</option>
+                <option value="blue">Short</option>
+                <option value="black">Medium</option>
+                <option value="green">Long</option>
+                </select>
+                
+                <select id="Type" onchange="dropdownChange();">
+                <option value="'Apply filter">type</option>
+                <option value="jones">Land</option>
+                <option value="james">Sea</option>
+                
+                </select>
+            </div></div>
+ 
+
+            <ul id="charactersList"></ul>
+        </div>
+        
+    </body>
+</html>
